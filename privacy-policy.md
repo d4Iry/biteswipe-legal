@@ -18,9 +18,10 @@ We do not receive your Google account password.
 
 ### 1.2 Location Information
 To surface relevant restaurant options, we collect:
-- **ZIP code or city name** that you enter or confirm when searching for restaurants.
+- **Precise GPS coordinates** when you grant location permission — used solely to find nearby restaurants for the current session.
+- **Session location** — the location you set when starting a swipe session (which may be GPS coordinates or a city/area name) is stored in Firestore as part of the session record and is visible to other members of your group.
 
-We do not collect precise GPS coordinates unless you explicitly grant location permission, in which case your general area (not precise coordinates) is used solely for restaurant search queries.
+We do not store your location permanently on your user profile. Location data is stored only within session records for the duration of the session and group.
 
 ### 1.3 App Activity Data
 - **Swipe history:** which restaurant cards you swiped yes or no on, and timestamps.
@@ -143,7 +144,7 @@ If you are a California resident, the California Consumer Privacy Act (CCPA) as 
 - Identifiers (name, email, user ID)
 - Commercial information (subscription status, sponsored interaction history)
 - Internet/electronic network activity (swipe history, session analytics)
-- Geolocation data (city/ZIP)
+- Geolocation data (precise GPS coordinates and session location)
 - Communications (chat messages)
 
 To exercise any of the above rights, contact us at tthayer16@gmail.com.
